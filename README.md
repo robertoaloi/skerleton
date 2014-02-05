@@ -15,7 +15,7 @@ cd my_app
 Remove the skerleton left-overs and you are ready to go:
 
 ````
-rm -rf bootstrap.sh README.md .git
+rm -rf bootstrap.sh README.md .git rel/reltool.config.template
 git init
 git add . && git commit -a -m "Initial commit."
 ````

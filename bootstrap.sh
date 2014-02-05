@@ -25,7 +25,7 @@ sed "s/skerleton/$APP/g" > $REL/reltool.config < $REL/reltool.config.template
 
 echo "[skerleton] ==> You are now ready to go!"
 echo "[skerleton] ==> You can remove the skerleton left-overs by running:"
-echo "\n\trm -rf bootstrap.sh README.md .git"
+echo "\n\trm -rf bootstrap.sh README.md .git rel/reltool.config.template"
 echo "\n\tgit init"
 echo "\n\tgit add . && git commit -a -m 'Initial commit.'"
 echo "\n"

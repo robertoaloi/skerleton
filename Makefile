@@ -20,7 +20,7 @@ ct: compile
 	./rebar skip_deps=true ct
 
 xref: compile
-	./rebar skip_deps=true xrefx
+	./rebar skip_deps=true xref
 
 rel: compile
 	./rebar generate

@@ -3,12 +3,13 @@
 APPS=apps
 APP=$(basename `pwd`)
 REL=rel
+REBAR=$(readlink -f "rebar")
 
 mkdir -p $APPS/$APP
 
 echo "[skerleton] ==> Creating application $APP"
 pushd $APPS/$APP
-../../rebar create-app appid=$APP
+$REBAR create-app appid=$APP
 popd
 
 echo "[skerleton] ==> Patching rebar.config"
@@ -17,7 +18,7 @@ rm rebar.config.bkp
 
 echo "[skerleton] ==> Creating node $APP"
 pushd $REL
-../rebar create-node nodeid=$APP
+$REBAR create-node nodeid=$APP
 popd
 
 echo "[skerleton] ==> Patching reltool.config"

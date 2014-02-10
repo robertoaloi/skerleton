@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 APPS=apps
 APP=$(basename `pwd`)

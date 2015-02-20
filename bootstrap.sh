@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 APPS=apps
 APP=$(basename `pwd`)

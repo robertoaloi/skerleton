@@ -2,6 +2,10 @@
 
 _skerleton_ allows you to bootstrap a brand new Erlang project in seconds.
 
+## Deprecation Note
+
+This project is superseded by rebar3 and its templating mechanism.
+
 ## Quickstart
 
 Create a new project based on skerleton and bootstrap it:
